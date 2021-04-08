@@ -1,0 +1,207 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.pets-header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  position: sticky;
+  min-height: 12rem;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+.pets-header .logo {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.pets-header .logo__title {
+  color: #545454;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: 110%;
+  letter-spacing: 0.192rem;
+}
+.pets-header .logo__subtitle {
+  margin-top: 1rem;
+  color: #292929;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 110%;
+  letter-spacing: 0.13rem;
+}
+.pets-header .menu {
+  display: flex;
+  width: 44.3rem;
+}
+.pets-header .list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+}
+.pets-header .list .list__item {
+  display: flex;
+  align-items: center;
+}
+.pets-header .list .list__item .list__link {
+  color: #292929;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-weight: 400;
+}
+.pets-header .list .list__item .list__link_active {
+  border-bottom: solid 0.3rem #F1CDB3;
+}
+.pets-header .list .list__item .list__link_disablet {
+  color: #545454;
+}
+
+.main__wrapper {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  flex-direction: column;
+}
+.main-pets__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #545454;
+  text-align: center;
+}
+.main-pets__title span {
+  display: block;
+}
+.main-pets-cards {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 3rem;
+}
+.main-paginations {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+}
+.main-paginations__button {
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 0.3rem #F1CDB3;
+  border: none;
+  border-radius: 100%;
+  padding: 1.9rem;
+  background: none;
+  height: 5.2rem;
+  width: 5.2rem;
+  align-self: center;
+  cursor: pointer;
+  transition-duration: 0.25s;
+  outline: none;
+}
+.main-paginations__button:hover {
+  box-shadow: none;
+  background-color: #FDDCC4;
+}
+.main-paginations__button_active {
+  box-shadow: none;
+  background-color: #F1CDB3;
+  cursor: auto;
+}
+.main-paginations__button_active:hover {
+  background-color: #F1CDB3;
+}
+.main-paginations__button:disabled {
+  box-shadow: inset 0 0 0 0.3rem #CDCDCD;
+}
+.main-paginations__button:disabled:hover {
+  box-shadow: inset 0 0 0 0.3rem #CDCDCD;
+  background-color: transparent;
+  cursor: auto;
+}
+
+.pets-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.9rem;
+}
+.pets-card:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.pets-card__image {
+  width: 100%;
+}
+.pets-card__content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.pets-card__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+.pets-card__button {
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  border: none;
+  font-size: 1.7rem;
+  line-height: 130%;
+  letter-spacing: 0.1rem;
+  font-family: Georgia;
+  font-style: normal;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.25s;
+  box-shadow: inset 0 0 0 2px #F1CDB3;
+  background-color: transparent;
+}
+.pets-card__button:hover {
+  box-shadow: none;
+  background-color: #FDDCC4;
+}
+
+/*# sourceMappingURL=style.css.map */
